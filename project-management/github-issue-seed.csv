@@ -1,0 +1,163 @@
+type,title,status,priority,platform,labels,body
+EPIC,"Historical record: Android MVP and backend baseline complete",Done,High,Android/Backend,"history,android,backend,done","Capture the delivered Android baseline as a permanent project record.
+
+Acceptance criteria:
+- Record working Android MVP status
+- Record Cloud Run SoP lookup integration
+- Record claim starter pack generation
+- Record DOCX generation and GCS upload
+- Record current release baseline noted in conversation"
+EPIC,"Historical record: Web Claim Starter Pack baseline complete",Done,High,Web,"history,web,done","Capture the delivered web baseline.
+
+Acceptance criteria:
+- Record Next.js web scaffold
+- Record multi-step flow
+- Record validation and field highlighting
+- Record autosave/reset
+- Record copy/download draft outputs"
+EPIC,"Historical record: Shared Swift core completed on Windows",Done,High,iOS/Shared Swift,"history,ios,shared-swift,done","Capture the shared Swift foundation that exists before native iPhone shell work.
+
+Acceptance criteria:
+- Record domain models
+- Record business logic
+- Record Windows-tested shared core status
+- Record that native iPhone shell is still pending"
+EPIC,"Historical record: MAUI baseline restored and verified",Done,High,MAUI,"history,maui,done","Capture the recovered MAUI baseline after rollback.
+
+Acceptance criteria:
+- Record rollback to known-good state
+- Record successful Windows build
+- Record successful Android build
+- Record confirmed CQRS slices and claim pack generation"
+EPIC,"Initialize Veteran Connect repo with project history, roadmap and backlog",Open,Critical,GitHub/Docs,"github,docs,critical","Create the first committed project-management baseline in the public Veteran Connect repo.
+
+Acceptance criteria:
+- Add README
+- Add architecture/project history document
+- Add backlog/tracker file or folder
+- Add guidance on branch strategy and source-of-truth repos"
+EPIC,"Create Veteran Connect GitHub Project structure",Open,Critical,GitHub,"github,project,critical","Create the actual GitHub Project board and fields for the build.
+
+Acceptance criteria:
+- Status field
+- Stream field
+- Platform field
+- Priority field
+- Type field
+- Confirmed Date field
+- Views for Roadmap, Current Sprint, Done History"
+TASK,"Repair or replace PowerShell issue-to-project import workflow",Open,High,GitHub,"github,automation,high","The previous script run partially succeeded and then failed when content already existed in the project.
+
+Acceptance criteria:
+- Prevent duplicate addProjectV2ItemById calls
+- Make reruns idempotent
+- Log created issues and skipped project items clearly"
+EPIC,"Build Provider Services as a first-class Veteran Connect module",Open,Critical,MAUI/Architecture,"provider-services,maui,critical","Create the minimum structural foundation so Provider Services can exist as a first-class module.
+
+Acceptance criteria:
+- Module shell exists
+- Domain model exists
+- Storage contracts exist
+- Navigation entry point exists
+- Placeholder dashboard exists"
+TASK,"Rebuild dashboard work safely on top of the restored MAUI baseline",Open,High,MAUI,"maui,dashboard,high","Resume dashboard work without breaking the restored claim workflow.
+
+Acceptance criteria:
+- Home page remains stable
+- No regressions to claim workflow
+- Dashboard split or partial pattern is documented
+- Changes validated on Windows and Android"
+TASK,"Fix login/dashboard navigation and preserve new brand styling",In Progress,High,MAUI,"maui,branding,bug","Resolve shell/page navigation problems while keeping the new brand look.
+
+Acceptance criteria:
+- Login routes resolve correctly
+- Dashboard buttons open correct pages
+- Styling is preserved
+- No crash during navigation"
+TASK,"Finish Physicians Initial Liability responsive layout cleanup",In Progress,Medium,MAUI,"maui,physicians,ui","Stabilise the layout in InitialLiabilityMedicalReportPage.xaml.
+
+Acceptance criteria:
+- Wrap-friendly layout in place
+- No clipped controls
+- Works across common widths
+- Existing sections remain intact"
+EPIC,"Align web Claim Starter Pack with DVA portal-style structure",Open,High,Web,"web,claims,high","Evolve the web output so it more closely matches the DVA portal claim structure while preserving plain-English outputs.
+
+Acceptance criteria:
+- Portal-aligned structure added
+- Plain-English draft statement retained
+- Evidence gaps retained
+- Final output easier to transfer into DVA portal"
+TASK,"Add richer export options to web starter pack",Open,Medium,Web,"web,exports","Add stronger export capability for web users.
+
+Acceptance criteria:
+- Decide between TXT/DOCX/PDF/backend export path
+- Export output matches latest web structure
+- Error handling and validation included"
+TASK,"Clean up legacy Android namespace remnants",Open,Medium,Android,"android,cleanup","Remove old package naming and legacy leftovers from earlier Android structure.
+
+Acceptance criteria:
+- Legacy namespace remnants removed
+- Build still passes
+- No broken references"
+TASK,"Clean up Android claims and forms guidance content",Open,Medium,Android,"android,content","Simplify and clean excess guidance text on claims/forms pages.
+
+Acceptance criteria:
+- Redundant text removed
+- Guidance clearer
+- Content matches current product direction"
+EPIC,"Implement unified account management across platforms",Open,Critical,Cross-platform,"auth,cross-platform,critical","Implement sign-up/login that works across web, Android, and future iOS/MAUI.
+
+Acceptance criteria:
+- Identity provider chosen
+- Shared auth flows documented
+- Session/token handling defined
+- Platform implementations scheduled"
+EPIC,"Implement subscription and entitlements across platforms",Open,High,Cross-platform,"subscriptions,cross-platform,high","Add subscriptions that work consistently across platforms.
+
+Acceptance criteria:
+- Plans defined
+- Entitlement model defined
+- Platform billing implications documented
+- Enforcement points identified"
+EPIC,"Implement security and privacy baseline controls",Open,Critical,Cross-platform,"security,privacy,critical","Move from planning to implementation for privacy/security.
+
+Acceptance criteria:
+- Secure auth/storage/transport controls defined and implemented
+- Secrets management approach documented
+- Audit/logging approach documented
+- Consent/data handling rules documented"
+EPIC,"Execute backend migration path toward Azure",Open,High,Backend,"backend,azure,high","Plan and execute backend target-state changes needed for future AI/document workflows.
+
+Acceptance criteria:
+- Migration target/state defined
+- Existing contracts preserved or versioned
+- Rollout plan documented"
+EPIC,"Implement first AI-assisted documentation workflows",Open,Medium,Cross-platform,"ai,docs,medium","Deliver the first AI-supported documentation capability after backend/security prerequisites are in place.
+
+Acceptance criteria:
+- First use case selected
+- Data flow documented
+- Security guardrails applied
+- MVP feature implemented"
+EPIC,"Build native iPhone app shell using shared Swift core",Open,Critical,iOS,"ios,critical","Turn the existing shared Swift foundation into a native iPhone app shell.
+
+Acceptance criteria:
+- Mac/Xcode environment available
+- iOS shell created under ios
+- Shared Swift core integrated
+- First vertical slice runs on device/simulator"
+TASK,"Create consolidated architecture and setup documentation",Open,High,Docs,"docs,architecture,high","Create one repository-based source of truth for architecture, setup and workstreams.
+
+Acceptance criteria:
+- Architecture doc added
+- Beginner-friendly setup guides added
+- Branch strategy documented
+- Platform matrix documented"
+TASK,"Create regression test plan across core workflows",Open,High,QA,"qa,regression,high","Document and run a minimum regression set across platforms.
+
+Acceptance criteria:
+- Core workflow checklist defined
+- MAUI Windows/Android coverage defined
+- Web coverage defined
+- Android baseline coverage defined"
